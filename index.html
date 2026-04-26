@@ -3,803 +3,798 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Vigneswaran K — AI Engineer & Senior Front-End Developer</title>
-<meta name="description" content="AI Engineer and Senior Front-End Developer specializing in LLM-powered systems, RAG architectures, and AI chatbot development. Open to opportunities in UAE and Germany."/>
-<meta property="og:title" content="Vigneswaran K — AI Engineer"/>
-<meta property="og:description" content="RAG & LLM Specialist | 8+ Years Experience | Open to UAE & Germany"/>
+<title>Vigneswaran K — AI Engineer & LLM Specialist</title>
+<meta name="description" content="AI Engineer specializing in RAG systems, LLM pipelines, and enterprise AI. 8+ years experience. Open to UAE & Germany."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#05050a;
-  --bg2:#0d0d18;
-  --bg3:#12121f;
-  --surface:#1a1a2e;
-  --surface2:#1f1f35;
-  --border:#ffffff0f;
-  --border2:#ffffff18;
-  --accent:#6c63ff;
-  --accent2:#a78bfa;
-  --gold:#f5a623;
-  --teal:#00d4aa;
-  --text:#f0effe;
-  --text2:#a09cc8;
-  --text3:#6b6899;
-  --font-head:'Syne',sans-serif;
-  --font-body:'DM Sans',sans-serif;
+  --ink:#080810;--ink2:#0e0e1c;--ink3:#141428;
+  --surface:#18182e;--surface2:#1e1e38;
+  --rim:#ffffff09;--rim2:#ffffff14;--rim3:#ffffff22;
+  --gold:#e8b86d;--gold2:#f5d08a;
+  --mint:#4affc4;--mint2:#2dd4a6;
+  --coral:#ff6b6b;--sky:#7eb8f7;
+  --text:#eeeef8;--text2:#9090b8;--text3:#55556e;
+  --grad-gold:linear-gradient(135deg,#e8b86d,#f5d08a,#e8b86d);
+  --grad-mint:linear-gradient(135deg,#4affc4,#2dd4a6);
+  --ff-display:'Clash Display',sans-serif;
+  --ff-body:'Cabinet Grotesk',sans-serif;
+  --ff-mono:'JetBrains Mono',monospace;
 }
-html{scroll-behavior:smooth;font-size:16px}
-body{background:var(--bg);color:var(--text);font-family:var(--font-body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:var(--ff-body);overflow-x:hidden;-webkit-font-smoothing:antialiased;cursor:none}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--ink)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9997;opacity:.5}
+#cursor{position:fixed;width:10px;height:10px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference}
+#cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(232,184,109,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s}
 
-/* ── SCROLLBAR ── */
-::-webkit-scrollbar{width:4px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--accent);border-radius:2px}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.4rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s}
+nav.scrolled{background:rgba(8,8,16,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--rim2)}
+.nav-logo{font-family:var(--ff-display);font-size:1.1rem;font-weight:700;color:var(--text);text-decoration:none}
+.nav-logo-dot{color:var(--gold)}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{font-family:var(--ff-mono);font-size:.75rem;color:var(--gold);border:1px solid rgba(232,184,109,.35);padding:.55rem 1.25rem;border-radius:4px;text-decoration:none;transition:all .25s;background:rgba(232,184,109,.04)}
+.nav-cta:hover{background:rgba(232,184,109,.12);box-shadow:0 0 20px rgba(232,184,109,.15)}
 
-/* ── NOISE OVERLAY ── */
-body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.5}
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 3rem 5rem}
+.hero-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)}
+.hero-glow{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none}
+.glow1{width:600px;height:600px;background:rgba(232,184,109,.07);top:-150px;right:-100px;animation:glowdrift 12s ease-in-out infinite}
+.glow2{width:500px;height:500px;background:rgba(74,255,196,.05);bottom:-100px;left:-100px;animation:glowdrift 14s ease-in-out infinite reverse}
+@keyframes glowdrift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-20px) scale(1.06)}}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--ff-mono);font-size:.72rem;color:var(--mint);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.75rem;opacity:0;animation:fadeup .7s .1s ease forwards}
+.eyebrow-dot{width:5px;height:5px;background:var(--mint);border-radius:50%;animation:mintpulse 2.5s infinite}
+@keyframes mintpulse{0%,100%{box-shadow:0 0 0 0 rgba(74,255,196,.5)}70%{box-shadow:0 0 0 6px rgba(74,255,196,0)}}
+.hero-name{font-family:var(--ff-display);font-size:clamp(3rem,6vw,5.5rem);font-weight:700;line-height:.95;letter-spacing:-.04em;margin-bottom:.5rem;opacity:0;animation:fadeup .7s .2s ease forwards}
+.hero-name-line1{display:block;color:var(--text)}
+.hero-name-line2{display:block;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:goldshift 4s ease infinite}
+@keyframes goldshift{0%,100%{background-position:0%}50%{background-position:100%}}
+.hero-title-tag{display:inline-block;font-family:var(--ff-mono);font-size:.7rem;color:var(--text3);letter-spacing:.08em;margin-top:1rem;margin-bottom:2rem;opacity:0;animation:fadeup .7s .35s ease forwards}
+.hero-desc{font-size:1.05rem;color:var(--text2);line-height:1.75;max-width:500px;font-weight:400;opacity:0;animation:fadeup .7s .45s ease forwards}
+.hero-desc strong{color:var(--text);font-weight:700}
+.hero-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem;opacity:0;animation:fadeup .7s .55s ease forwards}
+.htag{font-family:var(--ff-mono);font-size:.68rem;color:var(--text3);border:1px solid var(--rim2);padding:.3rem .75rem;border-radius:3px;letter-spacing:.05em;transition:all .25s}
+.htag:hover{color:var(--gold);border-color:rgba(232,184,109,.3);background:rgba(232,184,109,.04)}
+.hero-ctas{display:flex;gap:1rem;margin-top:2.5rem;opacity:0;animation:fadeup .7s .65s ease forwards}
+.cta-primary{font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.06em;color:var(--ink);background:var(--gold);padding:.75rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;transition:all .25s;display:inline-flex;align-items:center;gap:.5rem}
+.cta-primary:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 12px 30px rgba(232,184,109,.3)}
+.cta-ghost{font-family:var(--ff-mono);font-size:.78rem;letter-spacing:.06em;color:var(--text2);border:1px solid var(--rim3);padding:.75rem 2rem;border-radius:4px;text-decoration:none;transition:all .25s}
+.cta-ghost:hover{color:var(--text);border-color:var(--rim3);background:var(--rim)}
+.hero-social{display:flex;gap:1.5rem;margin-top:2rem;opacity:0;animation:fadeup .7s .75s ease forwards}
+.social-link{font-family:var(--ff-mono);font-size:.68rem;color:var(--text3);text-decoration:none;letter-spacing:.06em;transition:color .2s;display:flex;align-items:center;gap:.4rem}
+.social-link:hover{color:var(--gold)}
+.social-link svg{width:14px;height:14px;fill:currentColor}
+.hero-right{opacity:0;animation:fadeup .8s .4s ease forwards}
+.neural-canvas{width:100%;max-width:460px;margin:0 auto;display:block}
+@keyframes fadeup{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
-/* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(5,5,10,0.7);border-bottom:1px solid var(--border);transition:all .3s}
-.nav-logo{font-family:var(--font-head);font-weight:800;font-size:1.2rem;letter-spacing:-0.02em;color:var(--text);text-decoration:none}
-.nav-logo span{color:var(--accent)}
-.nav-links{display:flex;gap:2rem;list-style:none}
-.nav-links a{color:var(--text2);text-decoration:none;font-size:.875rem;font-weight:500;letter-spacing:.02em;transition:color .2s}
-.nav-links a:hover{color:var(--text)}
-.nav-cta{background:var(--accent);color:#fff;padding:.5rem 1.25rem;border-radius:6px;text-decoration:none;font-size:.875rem;font-weight:600;transition:all .2s;white-space:nowrap}
-.nav-cta:hover{background:var(--accent2);transform:translateY(-1px)}
-.nav-mobile-toggle{display:none;background:none;border:none;color:var(--text);cursor:pointer;font-size:1.5rem}
+/* STATS */
+.stats-bar{background:var(--ink2);border-top:1px solid var(--rim);border-bottom:1px solid var(--rim);padding:2rem 3rem}
+.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.stat-item{text-align:center;position:relative}
+.stat-item:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);height:40px;width:1px;background:var(--rim2)}
+.stat-num{font-family:var(--ff-display);font-size:2.4rem;font-weight:700;letter-spacing:-.03em;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block}
+.stat-desc{font-family:var(--ff-mono);font-size:.65rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase;margin-top:.4rem;display:block}
 
-/* ── HERO ── */
-#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 2rem 4rem}
-.hero-orb{position:absolute;border-radius:50%;filter:blur(120px);animation:orb-float 8s ease-in-out infinite}
-.orb1{width:500px;height:500px;background:rgba(108,99,255,0.18);top:-100px;right:-100px}
-.orb2{width:400px;height:400px;background:rgba(0,212,170,0.1);bottom:-100px;left:-100px;animation-delay:-4s}
-.orb3{width:300px;height:300px;background:rgba(245,166,35,0.08);top:40%;left:40%;animation-delay:-2s}
-@keyframes orb-float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(20px,-20px) scale(1.05)}}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(108,99,255,.12);border:1px solid rgba(108,99,255,.3);padding:.4rem 1rem;border-radius:50px;font-size:.8rem;color:var(--accent2);font-weight:500;margin-bottom:1.5rem;animation:fade-up .6s ease both}
-.hero-badge::before{content:'';width:6px;height:6px;background:var(--teal);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.hero-title{font-family:var(--font-head);font-size:clamp(2.5rem,5vw,4rem);font-weight:800;line-height:1.08;letter-spacing:-0.03em;animation:fade-up .6s .1s ease both}
-.hero-title .line1{display:block;color:var(--text)}
-.hero-title .line2{display:block;color:var(--accent)}
-.hero-title .line3{display:block;background:linear-gradient(135deg,var(--teal),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{margin-top:1.5rem;color:var(--text2);font-size:1.05rem;line-height:1.7;max-width:480px;animation:fade-up .6s .2s ease both}
-.hero-pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.75rem;animation:fade-up .6s .3s ease both}
-.pill{background:var(--surface);border:1px solid var(--border2);padding:.35rem .9rem;border-radius:50px;font-size:.78rem;color:var(--text2);font-weight:500}
-.hero-actions{display:flex;gap:1rem;margin-top:2rem;animation:fade-up .6s .4s ease both}
-.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;padding:.75rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;transition:all .2s;border:none;cursor:pointer}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(108,99,255,.4)}
-.btn-outline{background:transparent;color:var(--text);padding:.75rem 1.75rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--border2);transition:all .2s}
-.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
-.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem;animation:fade-up .6s .5s ease both}
-.stat{text-align:center;padding:1rem;background:var(--surface);border:1px solid var(--border);border-radius:10px}
-.stat-num{font-family:var(--font-head);font-size:1.8rem;font-weight:800;color:var(--accent);display:block}
-.stat-label{font-size:.75rem;color:var(--text3);margin-top:.2rem}
-.hero-visual{position:relative;animation:fade-up .6s .3s ease both}
-.hero-card-wrap{position:relative}
-.terminal{background:var(--bg2);border:1px solid var(--border2);border-radius:16px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.5)}
-.terminal-top{background:var(--surface);padding:.75rem 1rem;display:flex;align-items:center;gap:.5rem}
-.dot{width:10px;height:10px;border-radius:50%}
-.d1{background:#ff5f57}.d2{background:#febc2e}.d3{background:#28c840}
-.terminal-title{font-size:.75rem;color:var(--text3);margin-left:.5rem;font-family:monospace}
-.terminal-body{padding:1.25rem;font-family:monospace;font-size:.82rem;line-height:1.7}
-.t-line{display:flex;gap:.5rem}
-.t-prompt{color:var(--teal)}
-.t-cmd{color:var(--text)}
-.t-comment{color:var(--text3)}
-.t-str{color:var(--gold)}
-.t-key{color:var(--accent2)}
-.t-val{color:var(--teal)}
-.t-blank{height:.5rem}
-.cursor{display:inline-block;width:8px;height:14px;background:var(--accent);animation:blink .8s infinite;vertical-align:middle}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.floating-badge{position:absolute;background:var(--surface2);border:1px solid var(--border2);border-radius:10px;padding:.75rem 1rem;font-size:.78rem;box-shadow:0 8px 24px rgba(0,0,0,.4)}
-.fb1{top:-20px;right:-20px;animation:float1 4s ease-in-out infinite}
-.fb2{bottom:-20px;left:-20px;animation:float1 4s 2s ease-in-out infinite}
-@keyframes float1{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.fb-icon{font-size:1.2rem}
-.fb-text{color:var(--text2);margin-top:.2rem}
-.fb-val{color:var(--teal);font-weight:600}
-
-@keyframes fade-up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-
-/* ── SECTIONS ── */
-section{padding:6rem 2rem;position:relative;z-index:1}
+/* SECTION */
+section{padding:7rem 3rem;position:relative}
 .container{max-width:1200px;margin:0 auto}
-.section-label{font-size:.75rem;font-weight:600;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.75rem}
-.section-title{font-family:var(--font-head);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1}
-.section-title em{font-style:normal;color:var(--accent)}
-.section-sub{color:var(--text2);font-size:1rem;margin-top:.75rem;line-height:1.7;max-width:560px}
-.divider{width:100%;height:1px;background:var(--border);margin:0}
+.sec-eyebrow{font-family:var(--ff-mono);font-size:.68rem;color:var(--gold);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1rem;display:block}
+.sec-title{font-family:var(--ff-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:700;letter-spacing:-.04em;line-height:1.05;color:var(--text)}
+.sec-title em{font-style:normal;background:var(--grad-mint);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sec-sub{color:var(--text2);font-size:.95rem;line-height:1.75;max-width:540px;margin-top:.9rem;font-weight:400}
+.sec-header{margin-bottom:4rem}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.08s}.reveal-d2{transition-delay:.16s}.reveal-d3{transition-delay:.24s}.reveal-d4{transition-delay:.32s}
 
-/* ── SKILLS ── */
-#skills{background:var(--bg2)}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem}
-.skill-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.75rem;transition:all .3s;cursor:default;position:relative;overflow:hidden}
-.skill-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(108,99,255,0.06),transparent);opacity:0;transition:opacity .3s}
-.skill-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.3)}
-.skill-card:hover::before{opacity:1}
-.skill-icon{font-size:2rem;margin-bottom:1rem}
-.skill-card h3{font-family:var(--font-head);font-size:1.05rem;font-weight:700;margin-bottom:.75rem}
+/* ABOUT */
+#about{background:var(--ink2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.about-text p{font-size:.97rem;color:var(--text2);line-height:1.85;margin-bottom:1.2rem}
+.about-text p strong{color:var(--text);font-weight:700}
+.about-text p em{font-style:normal;color:var(--gold)}
+.philosophy-box{background:var(--surface);border:1px solid var(--rim2);border-radius:2px;padding:2rem;margin-top:2rem;position:relative;overflow:hidden}
+.philosophy-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.philosophy-label{font-family:var(--ff-mono);font-size:.65rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.9rem}
+.philosophy-quote{font-family:var(--ff-display);font-size:1.1rem;font-weight:600;color:var(--text);line-height:1.5}
+.about-right{display:flex;flex-direction:column;gap:1.5rem}
+.about-kpi{background:var(--surface);border:1px solid var(--rim2);border-radius:2px;padding:1.5rem;display:flex;align-items:center;gap:1.25rem;transition:all .3s;position:relative;overflow:hidden}
+.about-kpi::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--grad-gold)}
+.about-kpi:hover{border-color:rgba(232,184,109,.25);transform:translateX(4px)}
+.kpi-num{font-family:var(--ff-display);font-size:2rem;font-weight:700;color:var(--gold);min-width:4rem}
+.kpi-desc{font-size:.85rem;color:var(--text2);line-height:1.5}
+.kpi-desc strong{color:var(--text);display:block;margin-bottom:.15rem;font-size:.9rem}
+
+/* SKILLS */
+#skills{background:var(--ink)}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.skill-card{background:var(--surface);border:1px solid var(--rim);border-radius:2px;padding:2rem;transition:all .35s;position:relative;overflow:hidden;cursor:default}
+.skill-card:hover{border-color:rgba(232,184,109,.2);transform:translateY(-5px);box-shadow:0 24px 48px rgba(0,0,0,.4)}
+.skill-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
+.skill-num{font-family:var(--ff-mono);font-size:.65rem;color:var(--text3);letter-spacing:.1em}
+.skill-icon-wrap{width:36px;height:36px;border:1px solid var(--rim2);border-radius:2px;display:flex;align-items:center;justify-content:center}
+.skill-name{font-family:var(--ff-display);font-size:1.05rem;font-weight:600;color:var(--text);margin-bottom:1.25rem;letter-spacing:-.02em}
 .skill-tags{display:flex;flex-wrap:wrap;gap:.4rem}
-.tag{background:var(--bg);border:1px solid var(--border2);padding:.25rem .65rem;border-radius:50px;font-size:.72rem;color:var(--text2)}
-.tag.hot{background:rgba(108,99,255,.12);border-color:rgba(108,99,255,.3);color:var(--accent2)}
+.stag{font-family:var(--ff-mono);font-size:.65rem;color:var(--text3);border:1px solid var(--rim);padding:.25rem .6rem;border-radius:2px;transition:all .2s}
+.stag.lit{color:var(--gold2);border-color:rgba(232,184,109,.2);background:rgba(232,184,109,.05)}
+.stag:hover{color:var(--text);border-color:var(--rim2)}
 
-/* ── EXPERIENCE ── */
-.exp-timeline{margin-top:3rem;position:relative}
-.exp-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--border2)}
-.exp-item{padding-left:2.5rem;padding-bottom:3rem;position:relative}
-.exp-item:last-child{padding-bottom:0}
-.exp-dot{position:absolute;left:-6px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);box-shadow:0 0 0 3px rgba(108,99,255,.2)}
-.exp-dot.green{background:var(--teal)}
-.exp-period{font-size:.75rem;color:var(--teal);font-weight:600;letter-spacing:.05em;margin-bottom:.4rem}
-.exp-role{font-family:var(--font-head);font-size:1.2rem;font-weight:700;line-height:1.2}
-.exp-company{font-size:.88rem;color:var(--text2);margin-top:.2rem;margin-bottom:1rem}
-.exp-points{list-style:none;display:flex;flex-direction:column;gap:.6rem}
-.exp-points li{font-size:.88rem;color:var(--text2);padding-left:1.25rem;position:relative;line-height:1.6}
-.exp-points li::before{content:'›';position:absolute;left:0;color:var(--accent);font-weight:700}
-.exp-badge{display:inline-flex;gap:.4rem;flex-wrap:wrap;margin-top:.75rem}
-.exp-tag{background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.2);color:var(--teal);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-weight:500}
+/* PIPELINE */
+#pipeline{background:var(--ink2)}
+.pipeline-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.pipeline-steps::before{content:'';position:absolute;top:2.4rem;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(232,184,109,.3) 20%,rgba(232,184,109,.5),rgba(232,184,109,.3) 80%,transparent)}
+.p-step{text-align:center;padding:0 1rem}
+.p-step-icon{width:48px;height:48px;border:1px solid rgba(232,184,109,.2);border-radius:4px;margin:0 auto 1.25rem;display:flex;align-items:center;justify-content:center;background:var(--surface);position:relative;transition:all .3s}
+.p-step-num{position:absolute;top:-8px;right:-8px;width:18px;height:18px;background:var(--gold);border-radius:50%;font-family:var(--ff-mono);font-size:.6rem;color:var(--ink);font-weight:700;display:flex;align-items:center;justify-content:center}
+.p-step-name{font-family:var(--ff-display);font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:.4rem}
+.p-step-desc{font-family:var(--ff-mono);font-size:.63rem;color:var(--text3);line-height:1.6;letter-spacing:.02em}
+.p-step:hover .p-step-icon{border-color:rgba(232,184,109,.5);box-shadow:0 0 20px rgba(232,184,109,.12);transform:translateY(-4px)}
+.pipeline-code{margin-top:3rem;background:var(--surface);border:1px solid var(--rim2);border-radius:2px;overflow:hidden}
+.pcode-top{background:var(--ink3);padding:.75rem 1.25rem;display:flex;align-items:center;justify-content:space-between}
+.pcode-dots{display:flex;gap:.4rem}
+.pdot{width:9px;height:9px;border-radius:50%}
+.pd1{background:#ff5f57}.pd2{background:#febc2e}.pd3{background:#28c840}
+.pcode-lang{font-family:var(--ff-mono);font-size:.65rem;color:var(--text3);letter-spacing:.08em}
+.pcode-body{padding:1.5rem;font-family:var(--ff-mono);font-size:.78rem;line-height:1.8;overflow-x:auto}
+.ck{color:#c792ea}.cs{color:var(--gold)}.cv{color:var(--mint)}.cc{color:var(--text3)}.cf{color:var(--sky)}.cn2{color:var(--coral)}
+.cursor-blink{display:inline-block;width:7px;height:14px;background:var(--mint);animation:blink .9s infinite;vertical-align:middle;border-radius:1px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 
-/* ── PROJECTS ── */
-#projects{background:var(--bg2)}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2rem;margin-top:3rem}
-.project-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;overflow:hidden;transition:all .3s;position:relative}
-.project-card:hover{transform:translateY(-6px);border-color:rgba(108,99,255,.4);box-shadow:0 30px 60px rgba(0,0,0,.4)}
-.project-img{width:100%;height:220px;object-fit:cover;background:var(--bg3);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.project-img-placeholder{background:linear-gradient(135deg,var(--bg3),var(--surface));width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
-.project-img-placeholder .icon{font-size:3.5rem;filter:grayscale(0)}
-.project-img-placeholder .placeholder-label{font-size:.75rem;color:var(--text3);font-family:monospace}
-.project-img img{width:100%;height:100%;object-fit:cover}
-.project-featured-badge{position:absolute;top:1rem;left:1rem;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:.7rem;font-weight:700;padding:.3rem .75rem;border-radius:50px;letter-spacing:.05em;text-transform:uppercase}
-.project-body{padding:1.5rem}
-.project-title{font-family:var(--font-head);font-size:1.15rem;font-weight:700;margin-bottom:.5rem}
-.project-desc{font-size:.86rem;color:var(--text2);line-height:1.6;margin-bottom:1rem}
-.project-stack{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.25rem}
-.project-stack span{background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace}
-.project-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-bottom:1.25rem}
-.metric{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:.6rem;text-align:center}
-.metric-val{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--teal)}
-.metric-label{font-size:.65rem;color:var(--text3);margin-top:.1rem}
-.project-links{display:flex;gap:.75rem}
-.proj-link{flex:1;text-align:center;padding:.6rem;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none;transition:all .2s}
-.proj-link.primary{background:var(--accent);color:#fff}
-.proj-link.primary:hover{background:var(--accent2)}
-.proj-link.secondary{background:var(--bg);border:1px solid var(--border2);color:var(--text2)}
-.proj-link.secondary:hover{border-color:var(--accent);color:var(--accent)}
+/* EXPERIENCE */
+#experience{background:var(--ink)}
+.exp-grid{display:grid;grid-template-columns:200px 1fr;gap:4rem}
+.exp-nav{position:sticky;top:7rem;height:fit-content}
+.exp-nav-item{font-family:var(--ff-mono);font-size:.68rem;color:var(--text3);letter-spacing:.06em;padding:.75rem 0;border-left:1px solid var(--rim);padding-left:1.25rem;display:block;text-decoration:none;transition:all .25s}
+.exp-nav-item:hover,.exp-nav-item.active{color:var(--gold);border-color:var(--gold)}
+.exp-entries{display:flex;flex-direction:column;gap:3.5rem}
+.exp-entry{border:1px solid var(--rim);border-radius:2px;padding:2rem;background:var(--surface);transition:all .35s;position:relative;overflow:hidden}
+.exp-entry::before{content:'';position:absolute;top:0;left:0;bottom:0;width:2px;background:var(--rim2);transition:background .3s}
+.exp-entry:hover{border-color:var(--rim2)}
+.exp-entry:hover::before{background:var(--gold)}
+.exp-header{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.exp-period{font-family:var(--ff-mono);font-size:.65rem;color:var(--mint);letter-spacing:.1em;text-transform:uppercase}
+.exp-badge-current{font-family:var(--ff-mono);font-size:.6rem;color:var(--ink);background:var(--mint);padding:.2rem .6rem;border-radius:2px;letter-spacing:.06em;font-weight:600}
+.exp-role{font-family:var(--ff-display);font-size:1.25rem;font-weight:700;color:var(--text);letter-spacing:-.02em;margin-bottom:.25rem}
+.exp-company{font-family:var(--ff-mono);font-size:.72rem;color:var(--text3);letter-spacing:.06em}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.5rem}
+.exp-bullets li{font-size:.9rem;color:var(--text2);padding-left:1.25rem;position:relative;line-height:1.65}
+.exp-bullets li::before{content:'—';position:absolute;left:0;color:var(--gold);font-size:.7rem}
+.exp-bullets li strong{color:var(--text)}
+.exp-chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.echip{font-family:var(--ff-mono);font-size:.62rem;color:var(--text3);border:1px solid var(--rim2);padding:.2rem .6rem;border-radius:2px}
+.echip.gold{color:var(--gold2);border-color:rgba(232,184,109,.2);background:rgba(232,184,109,.04)}
 
-/* ── AI CHATBOT FEATURED ── */
-.chatbot-feature{background:var(--surface);border:1px solid var(--border2);border-radius:24px;padding:2.5rem;margin-bottom:2rem;position:relative;overflow:hidden}
-.chatbot-feature::before{content:'';position:absolute;top:0;right:0;width:400px;height:400px;background:radial-gradient(circle,rgba(108,99,255,.12),transparent 70%);pointer-events:none}
-.chatbot-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
-.chatbot-label{display:inline-flex;align-items:center;gap:.5rem;background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.25);color:var(--gold);font-size:.75rem;font-weight:600;padding:.35rem .9rem;border-radius:50px;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.05em}
-.chatbot-feature h3{font-family:var(--font-head);font-size:1.6rem;font-weight:800;line-height:1.2;margin-bottom:1rem}
-.chatbot-feature p{color:var(--text2);font-size:.9rem;line-height:1.7;margin-bottom:1.5rem}
-.chatbot-highlights{display:flex;flex-direction:column;gap:.75rem}
-.highlight-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.85rem}
-.h-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
-.h-icon.purple{background:rgba(108,99,255,.15)}
-.h-icon.teal{background:rgba(0,212,170,.12)}
-.h-icon.gold{background:rgba(245,166,35,.12)}
-.chatbot-mockup{background:var(--bg);border:1px solid var(--border2);border-radius:16px;overflow:hidden}
-.chat-topbar{background:var(--surface2);padding:.75rem 1rem;display:flex;align-items:center;gap:.75rem;border-bottom:1px solid var(--border)}
-.chat-avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--teal));display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff}
-.chat-info .name{font-size:.85rem;font-weight:600}
-.chat-info .status{font-size:.7rem;color:var(--teal);display:flex;align-items:center;gap:.3rem}
-.chat-status-dot{width:5px;height:5px;background:var(--teal);border-radius:50%;animation:pulse 2s infinite}
-.chat-body{padding:1rem;display:flex;flex-direction:column;gap:.75rem}
-.chat-msg{max-width:80%;font-size:.78rem;line-height:1.5;padding:.6rem .9rem;border-radius:10px}
-.chat-msg.bot{background:var(--surface2);color:var(--text);border-radius:0 10px 10px 10px}
-.chat-msg.user{background:var(--accent);color:#fff;align-self:flex-end;border-radius:10px 0 10px 10px}
-.chat-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.25rem}
-.chip{background:var(--surface2);border:1px solid var(--border2);color:var(--accent2);font-size:.68rem;padding:.25rem .6rem;border-radius:50px;cursor:pointer;transition:all .2s}
-.chip:hover{background:rgba(108,99,255,.15)}
-.chat-input-area{padding:.75rem 1rem;border-top:1px solid var(--border);display:flex;gap:.5rem;align-items:center}
-.chat-input{flex:1;background:var(--surface2);border:1px solid var(--border2);border-radius:8px;padding:.5rem .75rem;font-size:.75rem;color:var(--text);font-family:var(--font-body);outline:none}
-.chat-send{background:var(--accent);border:none;color:#fff;padding:.5rem .75rem;border-radius:8px;cursor:pointer;font-size:.8rem}
-.chatbot-img-upload{border:2px dashed var(--border2);border-radius:12px;padding:1.5rem;text-align:center;font-size:.8rem;color:var(--text3);background:var(--bg);margin-top:1rem;cursor:pointer;transition:all .2s}
-.chatbot-img-upload:hover{border-color:var(--accent);color:var(--accent2)}
+/* PROJECTS */
+#projects{background:var(--ink2)}
+.featured-project{background:var(--surface);border:1px solid var(--rim2);border-radius:2px;padding:3rem;position:relative;overflow:hidden;margin-bottom:2.5rem}
+.featured-project::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--mint) 70%,transparent)}
+.fp-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.fp-badge{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-mono);font-size:.62rem;color:var(--gold);border:1px solid rgba(232,184,109,.25);padding:.3rem .8rem;border-radius:2px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.25rem}
+.fp-title{font-family:var(--ff-display);font-size:1.75rem;font-weight:700;color:var(--text);letter-spacing:-.03em;line-height:1.1;margin-bottom:1rem}
+.fp-desc{font-size:.9rem;color:var(--text2);line-height:1.75;margin-bottom:1.75rem}
+.fp-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.75rem}
+.fp-metric{background:var(--ink2);border:1px solid var(--rim);border-radius:2px;padding:1rem;text-align:center}
+.fp-metric-val{font-family:var(--ff-display);font-size:1.3rem;font-weight:700;color:var(--mint);display:block}
+.fp-metric-label{font-family:var(--ff-mono);font-size:.6rem;color:var(--text3);margin-top:.25rem;letter-spacing:.06em;text-transform:uppercase}
+.fp-stack{display:flex;flex-wrap:wrap;gap:.4rem}
+.fp-stack span{font-family:var(--ff-mono);font-size:.63rem;color:var(--text3);border:1px solid var(--rim);padding:.2rem .6rem;border-radius:2px}
+.fp-highlights{display:flex;flex-direction:column;gap:1rem}
+.fp-hi{background:var(--ink2);border:1px solid var(--rim);border-radius:2px;padding:1.25rem;display:flex;gap:1rem;align-items:flex-start;transition:all .3s}
+.fp-hi:hover{border-color:var(--rim2);transform:translateX(4px)}
+.fp-hi-icon{width:32px;height:32px;border:1px solid var(--rim2);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.fp-hi-title{font-family:var(--ff-display);font-size:.85rem;font-weight:600;color:var(--text);margin-bottom:.3rem}
+.fp-hi-desc{font-size:.8rem;color:var(--text2);line-height:1.6}
+.chat-wrap{background:var(--ink);border:1px solid var(--rim2);border-radius:6px;overflow:hidden;margin-top:.5rem}
+.chat-header{background:var(--surface2);padding:.85rem 1.1rem;display:flex;align-items:center;gap:.8rem;border-bottom:1px solid var(--rim)}
+.chat-av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--mint2));display:flex;align-items:center;justify-content:center;font-family:var(--ff-mono);font-size:.6rem;font-weight:700;color:var(--ink)}
+.chat-name{font-family:var(--ff-body);font-size:.82rem;font-weight:700;color:var(--text)}
+.chat-status{font-family:var(--ff-mono);font-size:.6rem;color:var(--mint);display:flex;align-items:center;gap:.3rem}
+.live-dot{width:5px;height:5px;background:var(--mint);border-radius:50%;animation:mintpulse 2s infinite}
+.chat-msgs{padding:1rem;display:flex;flex-direction:column;gap:.8rem}
+.cmsg{font-size:.78rem;line-height:1.55;padding:.65rem .9rem;border-radius:5px;max-width:88%;font-family:var(--ff-body)}
+.cmsg.bot{background:var(--surface2);color:var(--text);border-radius:0 5px 5px 5px;border:1px solid var(--rim)}
+.cmsg.user{background:linear-gradient(135deg,rgba(232,184,109,.15),rgba(232,184,109,.08));border:1px solid rgba(232,184,109,.2);color:var(--text);align-self:flex-end;border-radius:5px 0 5px 5px}
+.chip-row{display:flex;flex-wrap:wrap;gap:.35rem;padding:.25rem 0}
+.cchip{font-family:var(--ff-mono);font-size:.62rem;border:1px solid rgba(74,255,196,.2);color:var(--mint);padding:.22rem .6rem;border-radius:20px}
+.chat-footer{padding:.75rem 1rem;border-top:1px solid var(--rim);display:flex;gap:.6rem}
+.chat-input{flex:1;background:var(--surface2);border:1px solid var(--rim2);border-radius:4px;padding:.5rem .75rem;font-family:var(--ff-mono);font-size:.72rem;color:var(--text);outline:none}
+.chat-input:focus{border-color:rgba(232,184,109,.3)}
+.chat-btn{background:var(--gold);border:none;color:var(--ink);padding:.5rem .9rem;border-radius:4px;font-family:var(--ff-mono);font-size:.7rem;cursor:pointer;font-weight:600}
+.proj-row{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.proj-card{background:var(--surface);border:1px solid var(--rim);border-radius:2px;padding:2rem;transition:all .35s}
+.proj-card:hover{border-color:rgba(74,255,196,.2);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.proj-year{font-family:var(--ff-mono);font-size:.62rem;color:var(--text3);letter-spacing:.1em;margin-bottom:.85rem}
+.proj-name{font-family:var(--ff-display);font-size:1.1rem;font-weight:700;color:var(--text);letter-spacing:-.02em;margin-bottom:.6rem}
+.proj-desc{font-size:.85rem;color:var(--text2);line-height:1.65;margin-bottom:1.25rem}
+.proj-stack{display:flex;flex-wrap:wrap;gap:.35rem}
+.proj-stack span{font-family:var(--ff-mono);font-size:.6rem;color:var(--text3);border:1px solid var(--rim);padding:.18rem .55rem;border-radius:2px}
 
-/* ── CERTIFICATIONS ── */
-.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:3rem}
-.cert-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;transition:all .3s}
-.cert-card:hover{border-color:rgba(108,99,255,.3);transform:translateY(-3px)}
-.cert-icon{font-size:1.75rem;flex-shrink:0}
-.cert-name{font-weight:600;font-size:.9rem;margin-bottom:.25rem}
-.cert-issuer{font-size:.75rem;color:var(--text3)}
-.cert-year{font-size:.72rem;color:var(--teal);font-weight:600;margin-top:.4rem}
+/* STACK */
+#stack{background:var(--ink)}
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--rim);background:var(--rim);margin-top:3rem}
+.tool-cell{background:var(--ink);padding:1.75rem 1.5rem;text-align:center;transition:all .3s;position:relative;overflow:hidden}
+.tool-cell:hover{background:var(--surface)}
+.tool-cell::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .3s;transform-origin:left}
+.tool-cell:hover::before{transform:scaleX(1)}
+.tool-name{font-family:var(--ff-display);font-size:.88rem;font-weight:600;color:var(--text);margin:0.6rem 0 .25rem}
+.tool-cat{font-family:var(--ff-mono);font-size:.6rem;color:var(--text3);letter-spacing:.08em;text-transform:uppercase}
+.tool-level{width:100%;height:2px;background:var(--rim2);border-radius:1px;margin-top:.75rem;overflow:hidden}
+.tool-level-fill{height:100%;border-radius:1px;background:var(--grad-gold)}
 
-/* ── OPEN TO WORK ── */
-#open-to-work{background:linear-gradient(135deg,var(--surface),var(--bg2))}
-.otw-wrap{border:1px solid rgba(108,99,255,.25);border-radius:24px;padding:3rem;text-align:center;position:relative;overflow:hidden}
-.otw-wrap::before{content:'';position:absolute;inset:-1px;background:linear-gradient(135deg,rgba(108,99,255,.15),rgba(0,212,170,.08));border-radius:24px;z-index:-1}
-.otw-flags{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1.5rem;font-size:2.5rem}
-.otw-title{font-family:var(--font-head);font-size:2rem;font-weight:800;margin-bottom:.75rem}
-.otw-sub{color:var(--text2);font-size:.95rem;line-height:1.7;max-width:500px;margin:0 auto 2rem}
-.otw-items{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
-.otw-item{background:var(--surface);border:1px solid var(--border2);padding:.6rem 1.25rem;border-radius:50px;font-size:.85rem;display:flex;align-items:center;gap:.5rem}
-.otw-item.active{background:rgba(0,212,170,.08);border-color:rgba(0,212,170,.3);color:var(--teal)}
-.contact-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
-.contact-link{display:flex;align-items:center;gap:.5rem;padding:.7rem 1.5rem;border-radius:10px;text-decoration:none;font-weight:600;font-size:.9rem;transition:all .2s}
-.contact-link.primary{background:var(--accent);color:#fff}
-.contact-link.primary:hover{background:var(--accent2);transform:translateY(-2px)}
-.contact-link.outline{background:transparent;border:1px solid var(--border2);color:var(--text)}
-.contact-link.outline:hover{border-color:var(--accent);color:var(--accent)}
+/* CERTS */
+#certs{background:var(--ink2)}
+.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.cert-card{background:var(--surface);border:1px solid var(--rim);border-radius:2px;padding:1.75rem;transition:all .3s;position:relative;overflow:hidden}
+.cert-card:hover{border-color:rgba(232,184,109,.2);transform:translateY(-3px)}
+.cert-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,var(--gold),transparent);opacity:0;transition:opacity .3s}
+.cert-card:hover::before{opacity:1}
+.cert-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.cert-icon{width:36px;height:36px;border:1px solid var(--rim2);border-radius:2px;display:flex;align-items:center;justify-content:center}
+.cert-year{font-family:var(--ff-mono);font-size:.62rem;color:var(--mint);letter-spacing:.08em}
+.cert-name{font-family:var(--ff-display);font-size:.95rem;font-weight:600;color:var(--text);letter-spacing:-.01em;margin-bottom:.3rem}
+.cert-issuer{font-family:var(--ff-mono);font-size:.65rem;color:var(--text3)}
 
-/* ── FOOTER ── */
-footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:.8rem;color:var(--text3)}
+/* HIRE */
+#hire{background:var(--ink);position:relative;overflow:hidden}
+.hire-glow{position:absolute;width:700px;height:400px;background:radial-gradient(ellipse,rgba(232,184,109,.06) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.hire-wrap{border:1px solid var(--rim2);border-radius:2px;padding:4rem;text-align:center;position:relative;background:var(--surface)}
+.hire-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--mint) 70%,transparent)}
+.hire-flags{font-size:2.2rem;margin-bottom:1.5rem;letter-spacing:.2rem}
+.hire-title{font-family:var(--ff-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:-.04em;color:var(--text);margin-bottom:1rem}
+.hire-title em{font-style:normal;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hire-sub{font-size:.95rem;color:var(--text2);line-height:1.75;max-width:540px;margin:0 auto 2.5rem}
+.hire-roles{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-bottom:2.5rem}
+.role-tag{font-family:var(--ff-mono);font-size:.7rem;color:var(--text2);border:1px solid var(--rim2);padding:.5rem 1.1rem;border-radius:2px;transition:all .25s}
+.role-tag.active{color:var(--gold);border-color:rgba(232,184,109,.3);background:rgba(232,184,109,.05)}
+.hire-contact{display:flex;flex-direction:column;align-items:center;gap:1.25rem}
+.contact-primary{font-family:var(--ff-mono);font-size:.82rem;letter-spacing:.06em;color:var(--ink);background:var(--gold);padding:.9rem 2.5rem;border-radius:4px;text-decoration:none;font-weight:600;transition:all .25s;display:inline-flex;align-items:center;gap:.6rem}
+.contact-primary:hover{background:var(--gold2);box-shadow:0 12px 30px rgba(232,184,109,.25);transform:translateY(-2px)}
+.contact-secondary{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center}
+.cs-link{font-family:var(--ff-mono);font-size:.72rem;color:var(--text3);text-decoration:none;letter-spacing:.06em;display:flex;align-items:center;gap:.4rem;transition:color .2s}
+.cs-link:hover{color:var(--gold)}
+.cs-link svg{width:13px;height:13px;fill:currentColor}
 
-/* ── SCROLL REVEAL ── */
-.reveal{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.16,1,.3,1)}
-.reveal.visible{opacity:1;transform:translateY(0)}
+/* FOOTER */
+footer{background:var(--ink2);border-top:1px solid var(--rim);padding:2rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:var(--ff-display);font-size:.95rem;font-weight:700;color:var(--text2)}
+.footer-copy{font-family:var(--ff-mono);font-size:.62rem;color:var(--text3);letter-spacing:.06em}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-family:var(--ff-mono);font-size:.62rem;color:var(--text3);text-decoration:none;letter-spacing:.06em;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
 
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr;gap:2.5rem}
-  .hero-visual{order:-1}
-  .chatbot-feature-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
+@media(max-width:1024px){
+  .hero-inner,.about-grid,.fp-grid,.exp-grid{grid-template-columns:1fr;gap:3rem}
+  .skills-grid,.tools-grid{grid-template-columns:repeat(2,1fr)}
+  .pipeline-steps{grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .pipeline-steps::before{display:none}
+  .certs-grid,.proj-row{grid-template-columns:repeat(2,1fr)}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
 }
-@media(max-width:600px){
-  nav{padding:1rem}
-  .hero-stats{grid-template-columns:repeat(3,1fr)}
-  .hero-actions{flex-direction:column}
-  .otw-flags{font-size:2rem}
+@media(max-width:640px){
+  nav{padding:1rem 1.5rem}
+  section{padding:5rem 1.5rem}
+  .stats-bar{padding:2rem 1.5rem}
+  .skills-grid,.tools-grid,.certs-grid,.proj-row{grid-template-columns:1fr}
+  .fp-metrics,.stats-inner{grid-template-columns:repeat(2,1fr)}
+  .hero-ctas{flex-direction:column}
+  .hire-wrap{padding:2.5rem 1.5rem}
+  .exp-grid{grid-template-columns:1fr}
+  .exp-nav{display:none}
+  footer{flex-direction:column;text-align:center}
+  .nav-links{display:none}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">VK<span>.</span></a>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav id="nav">
+  <a href="#" class="nav-logo">VK<span class="nav-logo-dot">.</span></a>
   <ul class="nav-links">
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#pipeline">AI Pipeline</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#open-to-work">Hire Me</a></li>
+    <li><a href="#stack">Stack</a></li>
   </ul>
-  <a href="mailto:harryvignesh369@gmail.com" class="nav-cta">Get In Touch</a>
+  <a href="mailto:harryvignesh369@gmail.com" class="nav-cta">hire_me()</a>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-orb orb1"></div>
-  <div class="hero-orb orb2"></div>
-  <div class="hero-orb orb3"></div>
-  <div class="hero-grid container">
-    <div class="hero-left">
-      <div class="hero-badge">
-        <span></span>Available for AI Engineer roles — UAE &amp; Germany
-      </div>
-      <h1 class="hero-title">
-        <span class="line1">Vigneswaran K</span>
-        <span class="line2">AI Engineer</span>
-        <span class="line3">RAG &amp; LLM Specialist</span>
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow glow1"></div>
+  <div class="hero-glow glow2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow"><span class="eyebrow-dot"></span>Available &nbsp;·&nbsp; UAE &nbsp;&amp;&nbsp; Germany</div>
+      <h1 class="hero-name">
+        <span class="hero-name-line1">Vigneswaran K</span>
+        <span class="hero-name-line2">AI Engineer</span>
       </h1>
-      <p class="hero-sub">8+ years building production-grade AI systems and web applications. Specialized in LLM-powered architectures, RAG pipelines, and enterprise AI chatbots. Certified Prompt Engineer actively seeking roles in UAE and Germany.</p>
-      <div class="hero-pills">
-        <span class="pill">🤖 GPT-4o / LLMs</span>
-        <span class="pill">🔗 RAG Pipelines</span>
-        <span class="pill">🐍 Python</span>
-        <span class="pill">⚡ LangChain</span>
-        <span class="pill">🅰️ Angular</span>
-        <span class="pill">🗄️ Vector DBs</span>
+      <div class="hero-title-tag">RAG &amp; LLM Specialist &nbsp;/&nbsp; Senior Front-End Developer &nbsp;/&nbsp; 8+ yrs</div>
+      <p class="hero-desc">Building <strong>production-grade AI systems</strong> that go beyond demos — from enterprise RAG chatbots with <strong>near-zero hallucination</strong> to full-stack web platforms serving real clients.</p>
+      <div class="hero-tags">
+        <span class="htag">GPT-4o / GPT-4o mini</span>
+        <span class="htag">RAG Pipelines</span>
+        <span class="htag">LangChain</span>
+        <span class="htag">Vector DBs</span>
+        <span class="htag">Python</span>
+        <span class="htag">Angular</span>
+        <span class="htag">LLMOps</span>
       </div>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="mailto:harryvignesh369@gmail.com" class="btn-outline">Contact Me</a>
+      <div class="hero-ctas">
+        <a href="#projects" class="cta-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          View Projects
+        </a>
+        <a href="mailto:harryvignesh369@gmail.com" class="cta-ghost">Get in Touch</a>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">8+</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">25+</span>
-          <span class="stat-label">Projects Shipped</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">1st</span>
-          <span class="stat-label">Prod AI/LLM in Agency</span>
-        </div>
+      <div class="hero-social">
+        <a href="https://github.com/vigneswarank/" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          vigneswarank
+        </a>
+        <a href="https://linkedin.com/in/vigneswaran-k" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="tel:+919524889860" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 9.81 19.79 19.79 0 01.02 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +91 9524 889 860
+        </a>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-card-wrap">
-        <div class="floating-badge fb1">
-          <div class="fb-icon">🔗</div>
-          <div class="fb-text">RAG Pipeline</div>
-          <div class="fb-val">Live in Production</div>
-        </div>
-        <div class="terminal">
-          <div class="terminal-top">
-            <div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
-            <span class="terminal-title">rag_chatbot.py — vigneswaran</span>
-          </div>
-          <div class="terminal-body">
-            <div class="t-line"><span class="t-comment"># Production RAG Chatbot — Autoprint</span></div>
-            <div class="t-blank"></div>
-            <div class="t-line"><span class="t-key">from</span> <span class="t-cmd">langchain</span> <span class="t-key">import</span> <span class="t-cmd">RAG</span></div>
-            <div class="t-line"><span class="t-key">import</span> <span class="t-cmd">openai</span><span class="t-comment">  # GPT-4o mini</span></div>
-            <div class="t-blank"></div>
-            <div class="t-line"><span class="t-key">class</span> <span class="t-str">AutoprintChatbot</span><span class="t-cmd">:</span></div>
-            <div class="t-line">&nbsp;&nbsp;<span class="t-key">def</span> <span class="t-str">__init__</span><span class="t-cmd">(self):</span></div>
-            <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-cmd">self.</span><span class="t-val">temperature</span> <span class="t-cmd">= </span><span class="t-str">0</span> <span class="t-comment"># anti-hallucination</span></div>
-            <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-cmd">self.</span><span class="t-val">grounding</span> <span class="t-cmd">= </span><span class="t-str">True</span></div>
-            <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-cmd">self.</span><span class="t-val">crm</span> <span class="t-cmd">= </span><span class="t-str">"Zoho"</span></div>
-            <div class="t-blank"></div>
-            <div class="t-line">&nbsp;&nbsp;<span class="t-key">def</span> <span class="t-str">answer</span><span class="t-cmd">(self, query):</span></div>
-            <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-cmd">context</span> <span class="t-cmd">= self.</span><span class="t-val">retrieve</span><span class="t-cmd">(query)</span></div>
-            <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-comment"># [LEAD_CAPTURE] → Zoho CRM</span></div>
-            <div class="t-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-key">return</span> <span class="t-cmd">self.</span><span class="t-val">generate</span><span class="t-cmd">(context)</span></div>
-            <div class="t-blank"></div>
-            <div class="t-line"><span class="t-prompt">▶</span> <span class="t-cmd">Deployed to production</span> <span class="t-str">✓</span></div>
-            <div class="t-line"><span class="t-prompt">▶</span> <span class="t-val">Hallucination rate: ~0%</span> <span class="cursor"></span></div>
-          </div>
-        </div>
-        <div class="floating-badge fb2">
-          <div class="fb-icon">🌍</div>
-          <div class="fb-text">Open to relocate</div>
-          <div class="fb-val">UAE · Germany</div>
-        </div>
-      </div>
+    <!-- Animated Neural Network SVG -->
+    <div class="hero-right">
+      <svg class="neural-canvas" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="ng" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#f5d08a" stop-opacity=".9"/><stop offset="100%" stop-color="#e8b86d" stop-opacity=".4"/></radialGradient>
+          <radialGradient id="nm" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#4affc4" stop-opacity=".8"/><stop offset="100%" stop-color="#2dd4a6" stop-opacity=".3"/></radialGradient>
+          <radialGradient id="nb" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7eb8f7" stop-opacity=".7"/><stop offset="100%" stop-color="#5a9aef" stop-opacity=".2"/></radialGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="glow2"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <g opacity=".22" stroke="#e8b86d" stroke-width=".7">
+          <line x1="70" y1="100" x2="180" y2="80"/><line x1="70" y1="100" x2="180" y2="140"/><line x1="70" y1="100" x2="180" y2="200"/><line x1="70" y1="100" x2="180" y2="260"/>
+          <line x1="70" y1="210" x2="180" y2="80"/><line x1="70" y1="210" x2="180" y2="140"/><line x1="70" y1="210" x2="180" y2="200"/><line x1="70" y1="210" x2="180" y2="260"/><line x1="70" y1="210" x2="180" y2="320"/>
+          <line x1="70" y1="320" x2="180" y2="200"/><line x1="70" y1="320" x2="180" y2="260"/><line x1="70" y1="320" x2="180" y2="320"/>
+        </g>
+        <g opacity=".18" stroke="#4affc4" stroke-width=".7">
+          <line x1="180" y1="80" x2="280" y2="110"/><line x1="180" y1="80" x2="280" y2="210"/>
+          <line x1="180" y1="140" x2="280" y2="110"/><line x1="180" y1="140" x2="280" y2="210"/>
+          <line x1="180" y1="200" x2="280" y2="110"/><line x1="180" y1="200" x2="280" y2="210"/><line x1="180" y1="200" x2="280" y2="310"/>
+          <line x1="180" y1="260" x2="280" y2="210"/><line x1="180" y1="260" x2="280" y2="310"/>
+          <line x1="180" y1="320" x2="280" y2="210"/><line x1="180" y1="320" x2="280" y2="310"/>
+        </g>
+        <g opacity=".28" stroke="#7eb8f7" stroke-width=".7">
+          <line x1="280" y1="110" x2="370" y2="180"/><line x1="280" y1="210" x2="370" y2="180"/><line x1="280" y1="210" x2="370" y2="240"/><line x1="280" y1="310" x2="370" y2="240"/>
+        </g>
+        <g filter="url(#glow)" opacity=".9">
+          <line x1="70" y1="210" x2="180" y2="140" stroke="#e8b86d" stroke-width="1.5"/>
+          <line x1="180" y1="140" x2="280" y2="210" stroke="#4affc4" stroke-width="1.5"/>
+          <line x1="280" y1="210" x2="370" y2="180" stroke="#7eb8f7" stroke-width="1.5"/>
+        </g>
+        <g filter="url(#glow)">
+          <circle cx="70" cy="100" r="10" fill="url(#ng)" stroke="#e8b86d" stroke-width=".8"/>
+          <circle cx="70" cy="210" r="13" fill="url(#ng)" stroke="#e8b86d" stroke-width="1.2"/>
+          <circle cx="70" cy="320" r="10" fill="url(#ng)" stroke="#e8b86d" stroke-width=".8"/>
+        </g>
+        <g filter="url(#glow)">
+          <circle cx="180" cy="80" r="9" fill="url(#nm)" stroke="#4affc4" stroke-width=".7"/>
+          <circle cx="180" cy="140" r="12" fill="url(#nm)" stroke="#4affc4" stroke-width="1"/>
+          <circle cx="180" cy="200" r="9" fill="url(#nm)" stroke="#4affc4" stroke-width=".7"/>
+          <circle cx="180" cy="260" r="9" fill="url(#nm)" stroke="#4affc4" stroke-width=".7"/>
+          <circle cx="180" cy="320" r="9" fill="url(#nm)" stroke="#4affc4" stroke-width=".7"/>
+        </g>
+        <g filter="url(#glow)">
+          <circle cx="280" cy="110" r="9" fill="url(#nb)" stroke="#7eb8f7" stroke-width=".7"/>
+          <circle cx="280" cy="210" r="12" fill="url(#nb)" stroke="#7eb8f7" stroke-width="1"/>
+          <circle cx="280" cy="310" r="9" fill="url(#nb)" stroke="#7eb8f7" stroke-width=".7"/>
+        </g>
+        <g filter="url(#glow2)">
+          <circle cx="370" cy="180" r="15" fill="url(#ng)" stroke="#f5d08a" stroke-width="1.5"/>
+          <circle cx="370" cy="240" r="11" fill="url(#nm)" stroke="#4affc4" stroke-width="1"/>
+        </g>
+        <text x="36" y="70" font-family="JetBrains Mono,monospace" font-size="8" fill="#55556e" letter-spacing="1">INPUT</text>
+        <text x="158" y="55" font-family="JetBrains Mono,monospace" font-size="8" fill="#55556e" letter-spacing="1">HIDDEN</text>
+        <text x="260" y="85" font-family="JetBrains Mono,monospace" font-size="8" fill="#55556e" letter-spacing="1">HIDDEN</text>
+        <text x="350" y="155" font-family="JetBrains Mono,monospace" font-size="8" fill="#55556e" letter-spacing="1">OUT</text>
+        <circle r="3.5" fill="#e8b86d"><animateMotion dur="2.5s" repeatCount="indefinite" path="M70,210 L180,140"/><animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/></circle>
+        <circle r="3.5" fill="#4affc4"><animateMotion dur="2.5s" begin="0.9s" repeatCount="indefinite" path="M180,140 L280,210"/><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="0.9s" repeatCount="indefinite"/></circle>
+        <circle r="3.5" fill="#7eb8f7"><animateMotion dur="2.5s" begin="1.8s" repeatCount="indefinite" path="M280,210 L370,180"/><animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="1.8s" repeatCount="indefinite"/></circle>
+        <rect x="110" y="358" width="200" height="48" rx="3" fill="#18182e" stroke="#ffffff14" stroke-width=".8"/>
+        <text x="125" y="377" font-family="Clash Display,sans-serif" font-size="11" font-weight="600" fill="#eeeef8">Production RAG Pipeline</text>
+        <text x="125" y="395" font-family="JetBrains Mono,monospace" font-size="8" fill="#4affc4">hallucination_rate ≈ 0%</text>
+        <circle cx="115" cy="382" r="5" fill="#4affc4"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/></circle>
+      </svg>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item reveal"><span class="stat-num">8+</span><span class="stat-desc">Years Engineering</span></div>
+    <div class="stat-item reveal reveal-d1"><span class="stat-num">25+</span><span class="stat-desc">Production Sites</span></div>
+    <div class="stat-item reveal reveal-d2"><span class="stat-num">~0%</span><span class="stat-desc">Hallucination Rate</span></div>
+    <div class="stat-item reveal reveal-d3"><span class="stat-num">40%</span><span class="stat-desc">Load Time Reduction</span></div>
+  </div>
+</div>
 
-<!-- SKILLS -->
-<section id="skills">
+<!-- ABOUT -->
+<section id="about">
   <div class="container">
-    <div class="reveal">
-      <div class="section-label">Technical Expertise</div>
-      <h2 class="section-title">Core <em>Competencies</em></h2>
-      <p class="section-sub">Spanning AI/ML engineering, full-stack development, and enterprise CMS platforms — built through 8+ years of real-world delivery.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="skill-icon">🧠</div>
-        <h3>AI &amp; LLM Engineering</h3>
-        <div class="skill-tags">
-          <span class="tag hot">GPT-4o / GPT-4o mini</span>
-          <span class="tag hot">RAG Systems</span>
-          <span class="tag hot">LangChain</span>
-          <span class="tag hot">Prompt Engineering</span>
-          <span class="tag">AI Agents</span>
-          <span class="tag">LLMOps</span>
-          <span class="tag">Vector Databases</span>
-          <span class="tag">OpenAI API</span>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="sec-eyebrow">About</span>
+        <h2 class="sec-title">Engineering AI that <em>ships</em></h2>
+        <div style="margin-top:2rem">
+          <p>I'm an <strong>AI Engineer and Senior Front-End Developer</strong> based in Coimbatore, India, with over 8 years building production-grade systems. My journey started in front-end engineering, evolved through full-stack development, and has now arrived at what I consider the most exciting frontier — <em>enterprise AI systems that actually work</em>.</p>
+          <p>I don't build AI toys. The RAG chatbot I deployed for <strong>Autoprint Machinery Manufacturers</strong> handles real customer queries, captures real leads to Zoho CRM, and maintains near-zero hallucination through careful prompt engineering and retrieval design.</p>
+          <p>My edge is the combination: I understand the <strong>full stack</strong> — from chunking PDFs and vector embeddings to the WordPress plugin that wraps it, the chat UI that delivers it, and the CRM pipeline that monetizes it.</p>
+          <p>Currently seeking <strong>AI Engineer</strong> and senior development roles in <em>UAE</em> and <em>Germany</em>. Certified Prompt Engineer with active LLM upskilling via Udemy's AI Engineering track.</p>
+        </div>
+        <div class="philosophy-box">
+          <div class="philosophy-label">Engineering Philosophy</div>
+          <div class="philosophy-quote">"Every LLM system I build is grounded, measured, and production-tested — not a prototype that breaks when real users arrive."</div>
         </div>
       </div>
-      <div class="skill-card reveal">
-        <div class="skill-icon">🐍</div>
-        <h3>Languages &amp; Frameworks</h3>
-        <div class="skill-tags">
-          <span class="tag hot">Python</span>
-          <span class="tag hot">TypeScript</span>
-          <span class="tag hot">JavaScript ES6+</span>
-          <span class="tag">PHP</span>
-          <span class="tag">Liquid (Shopify)</span>
-          <span class="tag">Angular 11+</span>
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-icon">🎨</div>
-        <h3>Front-End &amp; UI</h3>
-        <div class="skill-tags">
-          <span class="tag hot">Angular</span>
-          <span class="tag hot">Tailwind CSS</span>
-          <span class="tag">Bootstrap 4/5</span>
-          <span class="tag">Responsive Design</span>
-          <span class="tag">Figma → Code</span>
-          <span class="tag">PSD/XD-to-Code</span>
-          <span class="tag">Animation</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-icon">🛒</div>
-        <h3>CMS &amp; E-Commerce</h3>
-        <div class="skill-tags">
-          <span class="tag hot">WordPress</span>
-          <span class="tag hot">WooCommerce</span>
-          <span class="tag hot">Shopify</span>
-          <span class="tag">Custom Plugin Dev</span>
-          <span class="tag">Ella Theme</span>
-          <span class="tag">WP Plugin (PHP)</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-icon">🔧</div>
-        <h3>Tools &amp; Platforms</h3>
-        <div class="skill-tags">
-          <span class="tag hot">OpenAI API</span>
-          <span class="tag">Zoho CRM API</span>
-          <span class="tag">Git / GitHub</span>
-          <span class="tag">Webpack</span>
-          <span class="tag">Vercel</span>
-          <span class="tag">Figma</span>
-          <span class="tag">Postman</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-icon">🏆</div>
-        <h3>Certifications</h3>
-        <div class="skill-tags">
-          <span class="tag hot">Certified Prompt Engineer (2024)</span>
-          <span class="tag hot">AI Engineer — Udemy</span>
-          <span class="tag hot">RAG Specialist — Udemy</span>
-          <span class="tag">LLM Engineering — Udemy</span>
-          <span class="tag">Python — Udemy</span>
-        </div>
+      <div class="about-right reveal reveal-d2">
+        <div class="about-kpi"><div class="kpi-num">1st</div><div class="kpi-desc"><strong>First production AI product at AGT GoDigital</strong>Pioneered in-house AI engineering capability — live chatbot serving enterprise clients.</div></div>
+        <div class="about-kpi"><div class="kpi-num">40%</div><div class="kpi-desc"><strong>Performance engineering</strong>Reduced average page load time through Tailwind CSS optimization and lazy-loading patterns.</div></div>
+        <div class="about-kpi"><div class="kpi-num">30%</div><div class="kpi-desc"><strong>Measurable UI/UX impact</strong>Improved user engagement across 25+ e-commerce and service websites.</div></div>
+        <div class="about-kpi"><div class="kpi-num">4–5h</div><div class="kpi-desc"><strong>AI-assisted delivery velocity</strong>Built complete single-page sites in 4–5 hours using AI-assisted development workflows.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
+<!-- AI PIPELINE -->
+<section id="pipeline">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow">RAG Architecture</span>
+      <h2 class="sec-title">How I Build <em>AI Systems</em></h2>
+      <p class="sec-sub">Every production RAG pipeline I design follows this battle-tested 5-stage architecture — engineered for accuracy, not just demo performance.</p>
+    </div>
+    <div class="pipeline-steps reveal">
+      <div class="p-step">
+        <div class="p-step-icon"><span class="p-step-num">1</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <div class="p-step-name">Ingest</div>
+        <div class="p-step-desc">PDF parsing, ASCII85 + FlateDecode, structured extraction</div>
+      </div>
+      <div class="p-step">
+        <div class="p-step-icon"><span class="p-step-num">2</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <div class="p-step-name">Chunk</div>
+        <div class="p-step-desc">Semantic chunking, overlap tuning, context-aware splits</div>
+      </div>
+      <div class="p-step">
+        <div class="p-step-icon"><span class="p-step-num">3</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+        <div class="p-step-name">Embed</div>
+        <div class="p-step-desc">OpenAI text-embedding-3, vector database indexing</div>
+      </div>
+      <div class="p-step">
+        <div class="p-step-icon"><span class="p-step-num">4</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <div class="p-step-name">Retrieve</div>
+        <div class="p-step-desc">Similarity search, re-ranking, grounding validation</div>
+      </div>
+      <div class="p-step">
+        <div class="p-step-icon"><span class="p-step-num">5</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="p-step-name">Generate</div>
+        <div class="p-step-desc">GPT-4o mini, temp=0, grounding prompt, CRM capture</div>
+      </div>
+    </div>
+    <div class="pipeline-code reveal">
+      <div class="pcode-top"><div class="pcode-dots"><div class="pdot pd1"></div><div class="pdot pd2"></div><div class="pdot pd3"></div></div><div class="pcode-lang">rag_pipeline.py — production</div></div>
+      <div class="pcode-body"><span class="ck">class</span> <span class="cf">AutoprintRAG</span>:
+  <span class="cc"># Anti-hallucination: temperature locked at 0</span>
+  temperature = <span class="cs">0</span>
+  model = <span class="cs">"gpt-4o-mini"</span>
+  grounding = <span class="cv">True</span>
+
+  <span class="ck">def</span> <span class="cf">answer</span>(<span class="cv">self</span>, query: <span class="cf">str</span>) -> <span class="cf">dict</span>:
+    context = <span class="cv">self</span>.<span class="cf">retrieve</span>(query, top_k=<span class="cs">5</span>)
+    response = <span class="cv">self</span>.<span class="cf">generate</span>(query, context)
+
+    <span class="ck">if</span> <span class="cs">"[LEAD_CAPTURE]"</span> <span class="ck">in</span> response:
+      <span class="cv">self</span>.<span class="cf">zoho_crm</span>.<span class="cf">create_lead</span>(response)  <span class="cc"># Auto CRM</span>
+
+    <span class="ck">return</span> {<span class="cs">"answer"</span>: response, <span class="cs">"hallucination_rate"</span>: <span class="cv">"~0%"</span>}
+
+<span class="cc"># Deployed live — Autoprint Machinery Manufacturers</span>
+bot = <span class="cf">AutoprintRAG</span>()  <span class="cursor-blink"></span></div>
+    </div>
+  </div>
+</section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="container">
-    <div class="reveal">
-      <div class="section-label">Career Journey</div>
-      <h2 class="section-title">Work <em>Experience</em></h2>
-      <p class="section-sub">8+ years of progressive experience from front-end engineering to full-stack AI product development.</p>
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow">Career</span>
+      <h2 class="sec-title">Work <em>Experience</em></h2>
     </div>
-    <div class="exp-timeline" style="margin-top:3rem">
-      <div class="exp-item reveal">
-        <div class="exp-dot green"></div>
-        <div class="exp-period">DEC 2021 — PRESENT · 3+ YRS</div>
-        <div class="exp-role">AI Engineer &amp; Senior Front-End Developer</div>
-        <div class="exp-company">AGT GoDigital · Coimbatore, India</div>
-        <ul class="exp-points">
-          <li>Designed and deployed a <strong>production RAG-based AI chatbot</strong> for Autoprint Machinery Manufacturers using OpenAI GPT-4o mini, Python, and WordPress — processing machinery PDFs with hallucination-free answers.</li>
-          <li>Engineered anti-hallucination measures including temperature locking at 0, strict grounding system prompts, and source validation — achieving <strong>near-zero fabrication</strong> in client-facing responses.</li>
-          <li>Resolved a critical double-encoding bug (ASCII85 + FlateDecode) in PDF parsing pipeline, unblocking accurate knowledge extraction from complex machinery documentation.</li>
-          <li>Integrated CRM lead capture using structured JSON output and [LEAD_CAPTURE] tagging — enabling <strong>automatic Zoho CRM lead creation</strong> from chatbot conversations.</li>
-          <li>Built a rich text formatter for AI responses (markdown-to-HTML, quick reply chips, mobile-optimized chat UI with animations).</li>
-          <li>Delivered <strong>25+ responsive e-commerce &amp; service websites</strong> using WordPress, WooCommerce, Shopify &amp; Tailwind — with 30% improvement in user engagement.</li>
-          <li>Reduced website load time by <strong>40%</strong> through Tailwind CSS optimization and lazy-loading patterns.</li>
-          <li>Positioned AGT GoDigital as an in-house AI engineering capability — building internal AI roadmap and client-facing AI product services.</li>
-        </ul>
-        <div class="exp-badge">
-          <span class="exp-tag">GPT-4o mini</span>
-          <span class="exp-tag">RAG</span>
-          <span class="exp-tag">Python</span>
-          <span class="exp-tag">LangChain</span>
-          <span class="exp-tag">WordPress Plugin</span>
-          <span class="exp-tag">Zoho CRM</span>
-        </div>
+    <div class="exp-grid">
+      <div class="exp-nav reveal">
+        <a class="exp-nav-item active" href="#experience">AGT GoDigital</a>
+        <a class="exp-nav-item" href="#experience">BlindMatrix</a>
+        <a class="exp-nav-item" href="#experience">Oliver Ads</a>
       </div>
-      <div class="exp-item reveal">
-        <div class="exp-dot"></div>
-        <div class="exp-period">FEB 2021 — DEC 2021 · 11 MOS</div>
-        <div class="exp-role">Front-End Developer (Angular)</div>
-        <div class="exp-company">BlindMatrix Ltd · Chennai, India</div>
-        <ul class="exp-points">
-          <li>Developed the <strong>full UI for a curtain order management SaaS platform</strong> using Angular 11 with multi-language support, routing, and modular component architecture.</li>
-          <li>Streamlined order creation and tracking experience — improving client satisfaction metrics significantly.</li>
-        </ul>
-        <div class="exp-badge">
-          <span class="exp-tag">Angular 11</span>
-          <span class="exp-tag">TypeScript</span>
-          <span class="exp-tag">SaaS UI</span>
-          <span class="exp-tag">i18n</span>
+      <div class="exp-entries">
+        <div class="exp-entry reveal">
+          <div class="exp-header">
+            <div><div class="exp-period">Dec 2021 — Present</div><div class="exp-role">AI Engineer &amp; Senior Front-End Developer</div><div class="exp-company">AGT GoDigital · Coimbatore, India</div></div>
+            <span class="exp-badge-current">Current</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Designed and deployed a <strong>production RAG-based AI chatbot</strong> for Autoprint Machinery Manufacturers using OpenAI GPT-4o mini, Python, and WordPress — processing product documentation PDFs with hallucination-free responses.</li>
+            <li>Engineered anti-hallucination architecture: <strong>temperature=0, strict grounding system prompts, source validation</strong> — achieving near-zero fabrication in client-facing responses.</li>
+            <li>Resolved critical <strong>double-encoding bug (ASCII85 + FlateDecode)</strong> in PDF parsing pipeline, unblocking accurate knowledge extraction from complex machinery documentation.</li>
+            <li>Integrated CRM lead capture via <strong>structured JSON output and [LEAD_CAPTURE] tagging</strong> — triggering automatic Zoho CRM lead creation from chatbot conversations.</li>
+            <li>Built rich text formatter for AI responses: <strong>markdown-to-HTML rendering, quick reply chips, mobile-optimized chat UI</strong> with smooth animations.</li>
+            <li>Delivered <strong>25+ responsive e-commerce and service websites</strong> — 30% improvement in user engagement via UI/UX optimizations.</li>
+            <li>Reduced website load time by <strong>40%</strong> through Tailwind CSS optimization and lazy-loading JavaScript patterns.</li>
+            <li>Positioned AGT GoDigital as an <strong>in-house AI engineering capability</strong> — building internal AI roadmap and client-facing AI product services.</li>
+          </ul>
+          <div class="exp-chips">
+            <span class="echip gold">GPT-4o mini</span><span class="echip gold">RAG</span><span class="echip gold">LangChain</span><span class="echip gold">Python</span>
+            <span class="echip">WordPress Plugin (PHP)</span><span class="echip">Zoho CRM API</span><span class="echip">Vector DB</span><span class="echip">Tailwind CSS</span><span class="echip">Shopify</span>
+          </div>
         </div>
-      </div>
-      <div class="exp-item reveal">
-        <div class="exp-dot"></div>
-        <div class="exp-period">DEC 2018 — JAN 2021 · 2 YRS</div>
-        <div class="exp-role">Front-End Developer</div>
-        <div class="exp-company">Oliver Ads Ltd · Chennai, India</div>
-        <ul class="exp-points">
-          <li>Built responsive landing pages, marketing sites, and small-business web solutions using HTML5, CSS3, Bootstrap 4, and JavaScript.</li>
-          <li>Worked closely with clients to translate design requirements into <strong>pixel-perfect, mobile-first implementations</strong>.</li>
-        </ul>
-        <div class="exp-badge">
-          <span class="exp-tag">HTML5/CSS3</span>
-          <span class="exp-tag">Bootstrap 4</span>
-          <span class="exp-tag">JavaScript</span>
-          <span class="exp-tag">Responsive</span>
+        <div class="exp-entry reveal reveal-d1">
+          <div class="exp-header"><div><div class="exp-period">Feb 2021 — Dec 2021 · 11 mos</div><div class="exp-role">Front-End Developer (Angular)</div><div class="exp-company">BlindMatrix Ltd · Chennai, India</div></div></div>
+          <ul class="exp-bullets">
+            <li>Developed the <strong>full UI for a curtain order management SaaS platform</strong> using Angular 11 with multi-language support, routing, and modular component architecture.</li>
+            <li>Streamlined order creation and tracking experience, <strong>improving client satisfaction metrics</strong> significantly across the platform.</li>
+          </ul>
+          <div class="exp-chips"><span class="echip gold">Angular 11</span><span class="echip">TypeScript</span><span class="echip">RxJS</span><span class="echip">i18n</span><span class="echip">SaaS UI</span></div>
+        </div>
+        <div class="exp-entry reveal reveal-d2">
+          <div class="exp-header"><div><div class="exp-period">Dec 2018 — Jan 2021 · 2 yrs</div><div class="exp-role">Front-End Developer</div><div class="exp-company">Oliver Ads Ltd · Chennai, India</div></div></div>
+          <ul class="exp-bullets">
+            <li>Built <strong>responsive landing pages, marketing sites, and small-business web solutions</strong> using HTML5, CSS3, Bootstrap 4, and JavaScript.</li>
+            <li>Translated design requirements into <strong>pixel-perfect, mobile-first implementations</strong> in close collaboration with clients.</li>
+          </ul>
+          <div class="exp-chips"><span class="echip">HTML5 / CSS3</span><span class="echip">Bootstrap 4</span><span class="echip">JavaScript</span><span class="echip">Responsive Design</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<div class="divider"></div>
 
 <!-- PROJECTS -->
 <section id="projects">
   <div class="container">
-    <div class="reveal">
-      <div class="section-label">Featured Work</div>
-      <h2 class="section-title">AI &amp; Technical <em>Projects</em></h2>
-      <p class="section-sub">Production-deployed AI systems and enterprise web platforms built with modern stacks.</p>
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow">Work</span>
+      <h2 class="sec-title">AI &amp; Technical <em>Projects</em></h2>
+      <p class="sec-sub">Production-deployed systems, not demos. Every project has shipped to real users.</p>
     </div>
-
-    <!-- FEATURED: AI Chatbot -->
-    <div class="chatbot-feature reveal" style="margin-top:3rem">
-      <div class="chatbot-label">⭐ Featured Production Project</div>
-      <div class="chatbot-feature-grid">
+    <div class="featured-project reveal">
+      <div class="fp-grid">
         <div>
-          <h3>Production RAG AI Chatbot<br/>— Autoprint Machinery</h3>
-          <p>End-to-end RAG pipeline deployed as a live WordPress plugin for an enterprise machinery manufacturer. Processes product documentation PDFs and delivers accurate, hallucination-free answers to prospects — with automatic CRM lead capture.</p>
-          <div class="chatbot-highlights">
-            <div class="highlight-item">
-              <div class="h-icon purple">🧠</div>
-              <div><strong>Anti-Hallucination System:</strong> Temperature=0, strict grounding prompts, source validation — achieving near-zero fabrication in customer-facing responses.</div>
-            </div>
-            <div class="highlight-item">
-              <div class="h-icon teal">🔗</div>
-              <div><strong>Zoho CRM Integration:</strong> Auto-detects sales intent via structured JSON output with [LEAD_CAPTURE] tagging — triggers live CRM lead creation.</div>
-            </div>
-            <div class="highlight-item">
-              <div class="h-icon gold">📄</div>
-              <div><strong>PDF Pipeline Fix:</strong> Resolved critical ASCII85 + FlateDecode double-encoding bug, unblocking knowledge extraction from complex machinery docs.</div>
-            </div>
+          <div class="fp-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="#e8b86d"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Featured — Production Deployment</div>
+          <div class="fp-title">RAG AI Chatbot<br/>Autoprint Machinery</div>
+          <p class="fp-desc">End-to-end retrieval-augmented generation pipeline deployed as a live WordPress plugin for an enterprise machinery manufacturer. Processes product documentation PDFs, delivers hallucination-free technical answers, and auto-captures leads to Zoho CRM.</p>
+          <div class="fp-metrics">
+            <div class="fp-metric"><span class="fp-metric-val">~0%</span><span class="fp-metric-label">Hallucination</span></div>
+            <div class="fp-metric"><span class="fp-metric-val">Live</span><span class="fp-metric-label">Status</span></div>
+            <div class="fp-metric"><span class="fp-metric-val">Auto</span><span class="fp-metric-label">CRM Leads</span></div>
           </div>
-          <div style="margin-top:1.5rem">
-            <div style="display:flex;flex-wrap:wrap;gap:.4rem">
-              <span style="background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace">Python</span>
-              <span style="background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace">OpenAI GPT-4o mini</span>
-              <span style="background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace">RAG</span>
-              <span style="background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace">LangChain</span>
-              <span style="background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace">WordPress Plugin (PHP)</span>
-              <span style="background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace">JavaScript</span>
-              <span style="background:var(--bg);border:1px solid var(--border2);color:var(--text3);font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-family:monospace">Zoho CRM API</span>
-            </div>
-          </div>
-          <!-- Image Upload Area -->
-          <div class="chatbot-img-upload d-none" id="upload-area" onclick="document.getElementById('img-upload').click()">
-            <div style="font-size:1.5rem;margin-bottom:.5rem">📸</div>
-            <div style="font-weight:600;color:var(--text2);margin-bottom:.2rem">Upload Project Screenshot</div>
-            <div style="font-size:.75rem">Click to replace this placeholder with your actual chatbot screenshot</div>
-            <input type="file" id="img-upload" accept="image/*" style="display:none" onchange="handleImgUpload(event)"/>
-          </div>
+          <div class="fp-stack"><span>Python</span><span>OpenAI GPT-4o mini</span><span>RAG</span><span>LangChain</span><span>Vector DB</span><span>WordPress Plugin</span><span>PHP</span><span>Zoho CRM API</span></div>
         </div>
         <div>
-          <!-- CHAT MOCKUP -->
-          <div class="chatbot-mockup">
-            <div class="chat-topbar">
-              <div class="chat-avatar">AI</div>
-              <div class="chat-info">
-                <div class="name">Autoprint Assistant</div>
-                <div class="status"><span class="chat-status-dot"></span> Online · Powered by GPT-4o mini</div>
+          <div class="fp-highlights">
+            <div class="fp-hi">
+              <div class="fp-hi-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div><div class="fp-hi-title">Anti-Hallucination Architecture</div><div class="fp-hi-desc">Temperature locked at 0, strict grounding system prompts, source validation — achieving near-zero fabrication in every client-facing response.</div></div>
+            </div>
+            <div class="fp-hi">
+              <div class="fp-hi-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div><div class="fp-hi-title">Zoho CRM Lead Capture</div><div class="fp-hi-desc">Chatbot detects sales intent and emits structured JSON with [LEAD_CAPTURE] tag — automatically creating CRM leads from every qualifying conversation.</div></div>
+            </div>
+            <div class="fp-hi">
+              <div class="fp-hi-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <div><div class="fp-hi-title">PDF Pipeline Engineering</div><div class="fp-hi-desc">Resolved critical ASCII85 + FlateDecode double-encoding bug, unblocking accurate knowledge extraction from complex machinery documentation.</div></div>
+            </div>
+            <div class="chat-wrap">
+              <div class="chat-header">
+                <div class="chat-av">AI</div>
+                <div><div class="chat-name">Autoprint Assistant</div><div class="chat-status"><span class="live-dot"></span> Live · GPT-4o mini · RAG</div></div>
+              </div>
+              <div class="chat-msgs">
+                <div class="cmsg bot">Hello! I can answer questions about Autoprint machinery using our official documentation.</div>
+                <div class="cmsg user">What's the max print speed of your offset machines?</div>
+                <div class="cmsg bot">Based on our product documentation: Our offset machines support 8,000–15,000 sheets/hour. Would you like detailed specs?</div>
+                <div class="chip-row"><span class="cchip">Technical Specs</span><span class="cchip">Request Quote</span></div>
+              </div>
+              <div class="chat-footer">
+                <input class="chat-input" type="text" placeholder="Ask about machinery..."/>
+                <button class="chat-btn">Send</button>
               </div>
             </div>
-            <div class="chat-body">
-              <div class="chat-msg bot">👋 Hello! I'm the Autoprint AI Assistant. I can help you with our printing machinery, specifications, and pricing. How can I help?</div>
-              <div class="chat-chips">
-                <span class="chip">Product Catalog</span>
-                <span class="chip">Request Quote</span>
-                <span class="chip">Technical Specs</span>
-              </div>
-              <div class="chat-msg user">What are the specs of your offset printing machine?</div>
-              <div class="chat-msg bot">Based on our product documentation: Our offset printing machines support up to 4-color printing with speeds of 8,000–15,000 sheets/hour. Would you like a detailed technical sheet or to speak with a specialist?</div>
-              <div class="chat-chips">
-                <span class="chip">Download Spec Sheet</span>
-                <span class="chip">Talk to Expert</span>
-              </div>
-            </div>
-            <div class="chat-input-area">
-              <input class="chat-input" type="text" placeholder="Ask about our machinery..."/>
-              <button class="chat-send">➤</button>
-            </div>
-          </div>
-          <div style="margin-top:1rem;display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem">
-            <div class="metric"><div class="metric-val">~0%</div><div class="metric-label">Hallucination Rate</div></div>
-            <div class="metric"><div class="metric-val">Live</div><div class="metric-label">Deployment Status</div></div>
-            <div class="metric"><div class="metric-val">Auto</div><div class="metric-label">CRM Lead Capture</div></div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Other Projects -->
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-img">
-          <div class="project-img-placeholder">
-            <div class="icon">🤖</div>
-            <div class="placeholder-label">AI Portfolio Roadmap</div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">AI Portfolio — 6-Project Series</div>
-          <div class="project-desc">Building a multi-client RAG platform, AI-powered SEO content generator, multi-agent orchestration system, and LLMOps evaluation framework — aligned to FAANG-level engineering standards.</div>
-          <div class="project-stack">
-            <span>Python</span><span>LangChain</span><span>OpenAI API</span><span>LLMOps</span><span>Zoho API</span>
-          </div>
-          <div class="project-metrics">
-            <div class="metric"><div class="metric-val">6</div><div class="metric-label">Projects</div></div>
-            <div class="metric"><div class="metric-val">In Prog</div><div class="metric-label">Status</div></div>
-            <div class="metric"><div class="metric-val">Multi</div><div class="metric-label">Agent</div></div>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/harryvignesh369" target="_blank" class="proj-link primary">View on GitHub</a>
-          </div>
-        </div>
+    <div class="proj-row">
+      <div class="proj-card reveal">
+        <div class="proj-year">2024 — In Progress</div>
+        <div class="proj-name">AI Portfolio — 6-Project Series</div>
+        <div class="proj-desc">Multi-client RAG platform, AI-powered SEO content generator, multi-agent orchestration system, and LLMOps evaluation framework aligned to FAANG-level engineering standards.</div>
+        <div class="proj-stack"><span>Python</span><span>LangChain</span><span>OpenAI API</span><span>LLMOps</span><span>Zoho API</span></div>
       </div>
-      <div class="project-card reveal">
-        <div class="project-img">
-          <div class="project-img-placeholder">
-            <div class="icon">🛒</div>
-            <div class="placeholder-label">E-Commerce Platform</div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">25+ E-Commerce &amp; Service Sites</div>
-          <div class="project-desc">Delivered 25+ responsive e-commerce and service websites using WordPress, WooCommerce, Shopify, and Tailwind CSS — achieving 30% improvement in user engagement and 40% reduction in load time.</div>
-          <div class="project-stack">
-            <span>WordPress</span><span>WooCommerce</span><span>Shopify</span><span>Tailwind</span>
-          </div>
-          <div class="project-metrics">
-            <div class="metric"><div class="metric-val">25+</div><div class="metric-label">Sites Built</div></div>
-            <div class="metric"><div class="metric-val">40%</div><div class="metric-label">Faster Load</div></div>
-            <div class="metric"><div class="metric-val">30%</div><div class="metric-label">More Engage</div></div>
-          </div>
-          <div class="project-links">
-            <a href="mailto:harryvignesh369@gmail.com" class="proj-link primary">Request Portfolio</a>
-          </div>
-        </div>
+      <div class="proj-card reveal reveal-d1">
+        <div class="proj-year">2021 — 2022</div>
+        <div class="proj-name">BlindMatrix SaaS Platform</div>
+        <div class="proj-desc">Full UI architecture for a curtain order management SaaS using Angular 11. Multi-language support, modular component architecture, routing, and streamlined order tracking.</div>
+        <div class="proj-stack"><span>Angular 11</span><span>TypeScript</span><span>RxJS</span><span>i18n</span><span>SCSS</span></div>
       </div>
-      <div class="project-card reveal">
-        <div class="project-img">
-          <div class="project-img-placeholder">
-            <div class="icon">🪟</div>
-            <div class="placeholder-label">BlindMatrix SaaS</div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-title">BlindMatrix — SaaS Order Management</div>
-          <div class="project-desc">Full UI development for a curtain order management SaaS platform using Angular 11. Multi-language support, routing, and modular component architecture. Streamlined order creation and tracking experience.</div>
-          <div class="project-stack">
-            <span>Angular 11</span><span>TypeScript</span><span>i18n</span><span>RxJS</span>
-          </div>
-          <div class="project-metrics">
-            <div class="metric"><div class="metric-val">SaaS</div><div class="metric-label">Platform</div></div>
-            <div class="metric"><div class="metric-val">Multi</div><div class="metric-label">Language</div></div>
-            <div class="metric"><div class="metric-val">Full</div><div class="metric-label">UI Build</div></div>
-          </div>
-          <div class="project-links">
-            <a href="mailto:harryvignesh369@gmail.com" class="proj-link primary">Learn More</a>
-          </div>
-        </div>
+      <div class="proj-card reveal reveal-d2">
+        <div class="proj-year">2021 — Present</div>
+        <div class="proj-name">25+ E-Commerce Platforms</div>
+        <div class="proj-desc">Delivered 25+ responsive e-commerce and service websites using WordPress, WooCommerce, and Shopify. 30% engagement uplift and 40% load time reduction via Tailwind optimization.</div>
+        <div class="proj-stack"><span>WordPress</span><span>WooCommerce</span><span>Shopify</span><span>Tailwind</span><span>PHP</span></div>
+      </div>
+      <div class="proj-card reveal reveal-d3">
+        <div class="proj-year">2024 — Roadmap</div>
+        <div class="proj-name">Multi-Agent Orchestration System</div>
+        <div class="proj-desc">Production-grade multi-agent system with specialized AI agents for research, content generation, and data analysis — with full evaluation pipelines and LLMOps monitoring.</div>
+        <div class="proj-stack"><span>Python</span><span>LangChain Agents</span><span>LLMOps</span><span>Eval Framework</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
+<!-- STACK -->
+<section id="stack">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow">Tools</span>
+      <h2 class="sec-title">Technical <em>Stack</em></h2>
+      <p class="sec-sub">Production-proven tools — not just listed on a resume, but actually shipped in enterprise systems.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-top"><span class="skill-num">01</span><div class="skill-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div></div>
+        <div class="skill-name">AI &amp; LLM Engineering</div>
+        <div class="skill-tags"><span class="stag lit">GPT-4o / GPT-4o mini</span><span class="stag lit">RAG Systems</span><span class="stag lit">LangChain</span><span class="stag lit">Prompt Engineering</span><span class="stag">AI Agents</span><span class="stag">LLMOps</span><span class="stag">Vector Databases</span><span class="stag">OpenAI API</span></div>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-top"><span class="skill-num">02</span><div class="skill-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4affc4" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div></div>
+        <div class="skill-name">Languages</div>
+        <div class="skill-tags"><span class="stag lit">Python</span><span class="stag lit">TypeScript</span><span class="stag lit">JavaScript ES6+</span><span class="stag">PHP</span><span class="stag">Liquid (Shopify)</span><span class="stag">HTML5 / CSS3</span></div>
+      </div>
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-top"><span class="skill-num">03</span><div class="skill-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7eb8f7" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div></div>
+        <div class="skill-name">Front-End</div>
+        <div class="skill-tags"><span class="stag lit">Angular 11+</span><span class="stag lit">Tailwind CSS</span><span class="stag">Bootstrap 4/5</span><span class="stag">Responsive Design</span><span class="stag">Figma → Code</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-top"><span class="skill-num">04</span><div class="skill-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div></div>
+        <div class="skill-name">CMS &amp; E-Commerce</div>
+        <div class="skill-tags"><span class="stag lit">WordPress</span><span class="stag lit">WooCommerce</span><span class="stag lit">Shopify</span><span class="stag">Custom Plugin Dev</span><span class="stag">Ella Theme</span></div>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-top"><span class="skill-num">05</span><div class="skill-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4affc4" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div></div>
+        <div class="skill-name">Platforms &amp; APIs</div>
+        <div class="skill-tags"><span class="stag lit">OpenAI API</span><span class="stag lit">Zoho CRM API</span><span class="stag">Git / GitHub</span><span class="stag">Vercel</span><span class="stag">Webpack</span></div>
+      </div>
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-top"><span class="skill-num">06</span><div class="skill-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f5d08a" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div></div>
+        <div class="skill-name">Certifications</div>
+        <div class="skill-tags"><span class="stag lit">Prompt Engineering (2024)</span><span class="stag lit">AI Engineer — Udemy</span><span class="stag lit">RAG &amp; LLM — Udemy</span><span class="stag">Python — Udemy</span></div>
+      </div>
+    </div>
+    <div class="tools-grid reveal" style="margin-top:1.5rem">
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.2" style="margin:0 auto;display:block"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div class="tool-name">OpenAI GPT-4o</div><div class="tool-cat">LLM</div><div class="tool-level"><div class="tool-level-fill" style="width:95%"></div></div></div>
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4affc4" stroke-width="1.2" style="margin:0 auto;display:block"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.04"/></svg></div><div class="tool-name">LangChain</div><div class="tool-cat">AI Framework</div><div class="tool-level"><div class="tool-level-fill" style="width:88%"></div></div></div>
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7eb8f7" stroke-width="1.2" style="margin:0 auto;display:block"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div class="tool-name">Vector DB</div><div class="tool-cat">Storage</div><div class="tool-level"><div class="tool-level-fill" style="width:82%"></div></div></div>
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.2" style="margin:0 auto;display:block"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="tool-name">Python</div><div class="tool-cat">Language</div><div class="tool-level"><div class="tool-level-fill" style="width:90%"></div></div></div>
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4affc4" stroke-width="1.2" style="margin:0 auto;display:block"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="tool-name">Angular</div><div class="tool-cat">Framework</div><div class="tool-level"><div class="tool-level-fill" style="width:92%"></div></div></div>
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7eb8f7" stroke-width="1.2" style="margin:0 auto;display:block"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><div class="tool-name">WordPress</div><div class="tool-cat">CMS</div><div class="tool-level"><div class="tool-level-fill" style="width:96%"></div></div></div>
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.2" style="margin:0 auto;display:block"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div><div class="tool-name">Shopify</div><div class="tool-cat">E-Commerce</div><div class="tool-level"><div class="tool-level-fill" style="width:88%"></div></div></div>
+      <div class="tool-cell"><div style="margin-bottom:.6rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4affc4" stroke-width="1.2" style="margin:0 auto;display:block"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="tool-name">Zoho CRM</div><div class="tool-cat">Integration</div><div class="tool-level"><div class="tool-level-fill" style="width:80%"></div></div></div>
+    </div>
+  </div>
+</section>
 
-<!-- CERTS / EDUCATION -->
+<!-- CERTS -->
 <section id="certs">
   <div class="container">
-    <div class="reveal">
-      <div class="section-label">Credentials</div>
-      <h2 class="section-title">Education &amp; <em>Certifications</em></h2>
-    </div>
+    <div class="sec-header reveal"><span class="sec-eyebrow">Credentials</span><h2 class="sec-title">Education &amp; <em>Certifications</em></h2></div>
     <div class="certs-grid">
-      <div class="cert-card reveal">
-        <div class="cert-icon">🏅</div>
-        <div>
-          <div class="cert-name">Prompt Engineering — Certified</div>
-          <div class="cert-issuer">Professional Certification</div>
-          <div class="cert-year">2024</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🤖</div>
-        <div>
-          <div class="cert-name">AI Engineer Certification</div>
-          <div class="cert-issuer">Udemy</div>
-          <div class="cert-year">2024</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🔗</div>
-        <div>
-          <div class="cert-name">RAG &amp; LLM Engineering</div>
-          <div class="cert-issuer">Udemy</div>
-          <div class="cert-year">2024</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🐍</div>
-        <div>
-          <div class="cert-name">Python for AI</div>
-          <div class="cert-issuer">Udemy</div>
-          <div class="cert-year">2023</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🎓</div>
-        <div>
-          <div class="cert-name">B.E. Electrical &amp; Electronics Engineering</div>
-          <div class="cert-issuer">Vikram College of Engineering, Enathi</div>
-          <div class="cert-year">2012 – 2016</div>
-        </div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-icon">🌐</div>
-        <div>
-          <div class="cert-name">Languages</div>
-          <div class="cert-issuer">English (Professional) · Tamil (Native)</div>
-          <div class="cert-year">Bilingual</div>
-        </div>
-      </div>
+      <div class="cert-card reveal"><div class="cert-top"><div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="cert-year">2024</div></div><div class="cert-name">Certified Prompt Engineer</div><div class="cert-issuer">Professional Certification</div></div>
+      <div class="cert-card reveal reveal-d1"><div class="cert-top"><div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><div class="cert-year">2024</div></div><div class="cert-name">AI Engineer Certification</div><div class="cert-issuer">Udemy</div></div>
+      <div class="cert-card reveal reveal-d2"><div class="cert-top"><div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div class="cert-year">2024</div></div><div class="cert-name">RAG &amp; LLM Engineering</div><div class="cert-issuer">Udemy</div></div>
+      <div class="cert-card reveal"><div class="cert-top"><div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="cert-year">2023</div></div><div class="cert-name">Python for AI Engineering</div><div class="cert-issuer">Udemy</div></div>
+      <div class="cert-card reveal reveal-d1"><div class="cert-top"><div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div class="cert-year">2016</div></div><div class="cert-name">B.E. Electrical &amp; Electronics Engineering</div><div class="cert-issuer">Vikram College of Engineering, Enathi</div></div>
+      <div class="cert-card reveal reveal-d2"><div class="cert-top"><div class="cert-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8b86d" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="cert-year">Bilingual</div></div><div class="cert-name">English · Tamil</div><div class="cert-issuer">Professional &amp; Native Fluency</div></div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- OPEN TO WORK -->
-<section id="open-to-work">
+<!-- HIRE -->
+<section id="hire">
+  <div class="hire-glow"></div>
   <div class="container">
-    <div class="otw-wrap reveal">
-      <div class="otw-flags">🇦🇪🇩🇪</div>
-      <h2 class="otw-title">Open to Work in UAE &amp; Germany</h2>
-      <p class="otw-sub">Actively seeking AI Engineer, Full-Stack AI Developer, or Senior Front-End roles in the UAE and Germany. Available for relocation. Ready to contribute from day one with proven production AI experience.</p>
-      <div class="otw-items">
-        <div class="otw-item active">✅ AI Engineer</div>
-        <div class="otw-item active">✅ LLM / RAG Specialist</div>
-        <div class="otw-item active">✅ Full-Stack AI Dev</div>
-        <div class="otw-item active">✅ Senior Front-End</div>
-        <div class="otw-item">🌍 UAE (Preferred)</div>
-        <div class="otw-item">🌍 Germany (Open)</div>
-        <div class="otw-item">💼 Full-time / Contract</div>
+    <div class="hire-wrap reveal">
+      <div class="hire-flags">🇦🇪 🇩🇪</div>
+      <h2 class="hire-title">Open to Roles in <em>UAE &amp; Germany</em></h2>
+      <p class="hire-sub">Experienced AI Engineer with production LLM systems live in the wild. Ready to relocate and contribute from day one — rare combined expertise in AI engineering and full-stack development.</p>
+      <div class="hire-roles">
+        <span class="role-tag active">AI Engineer</span>
+        <span class="role-tag active">LLM / RAG Specialist</span>
+        <span class="role-tag active">Full-Stack AI Developer</span>
+        <span class="role-tag active">Senior Front-End Dev</span>
+        <span class="role-tag">Full-time</span>
+        <span class="role-tag">Contract</span>
+        <span class="role-tag">Open to Relocation</span>
       </div>
-      <div class="contact-links">
-        <a href="mailto:harryvignesh369@gmail.com" class="contact-link primary">📧 harryvignesh369@gmail.com</a>
-        <a href="https://linkedin.com/in/vigneswaran-k" target="_blank" class="contact-link outline">💼 LinkedIn</a>
-        <a href="https://github.com/harryvignesh369" target="_blank" class="contact-link outline">🐙 GitHub</a>
-        <a href="tel:+919524889860" class="contact-link outline">📞 +91 9524 889 860</a>
+      <div class="hire-contact">
+        <a href="mailto:harryvignesh369@gmail.com" class="contact-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          harryvignesh369@gmail.com
+        </a>
+        <div class="contact-secondary">
+          <a href="https://github.com/vigneswarank/" target="_blank" class="cs-link"><svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>github.com/vigneswarank</a>
+          <a href="https://linkedin.com/in/vigneswaran-k" target="_blank" class="cs-link"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+          <a href="tel:+919524889860" class="cs-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.09 9.81 19.79 19.79 0 01.02 1.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+91 9524 889 860</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2025 Vigneswaran K · AI Engineer &amp; Senior Front-End Developer · Coimbatore, India<br/>
-  <span style="margin-top:.4rem;display:block">Built with HTML · CSS · JS · Deployable on Vercel &amp; GitHub Pages</span></p>
+  <div class="footer-logo">VK<span style="color:var(--gold)">.</span></div>
+  <div class="footer-copy">© 2025 Vigneswaran K · AI Engineer &amp; LLM Specialist</div>
+  <div class="footer-links">
+    <a href="https://github.com/vigneswarank/" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/vigneswaran-k" target="_blank">LinkedIn</a>
+    <a href="mailto:harryvignesh369@gmail.com">Email</a>
+  </div>
 </footer>
 
 <script>
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if(e.isIntersecting){
-      setTimeout(()=> e.target.classList.add('visible'), i * 80);
-      io.unobserve(e.target);
-    }
-  });
-}, {threshold: 0.08});
-reveals.forEach(el => io.observe(el));
+// CURSOR
+const cursor=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px';});
+(function animRing(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing);})();
+document.querySelectorAll('a,button,.skill-card,.proj-card,.about-kpi,.fp-hi,.cert-card,.tool-cell').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cursor.style.width='16px';cursor.style.height='16px';ring.style.width='52px';ring.style.height='52px';});
+  el.addEventListener('mouseleave',()=>{cursor.style.width='10px';cursor.style.height='10px';ring.style.width='36px';ring.style.height='36px';});
+});
 
-// Image upload handler
-function handleImgUpload(e) {
-  const file = e.target.files[0];
-  if(!file) return;
-  const url = URL.createObjectURL(file);
-  const area = document.getElementById('upload-area');
-  area.innerHTML = `<img src="${url}" style="width:100%;border-radius:10px;max-height:260px;object-fit:cover"/>`;
-}
+// NAV
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);});
 
-// Nav scroll effect
-window.addEventListener('scroll', () => {
-  document.querySelector('nav').style.background =
-    window.scrollY > 50 ? 'rgba(5,5,10,0.95)' : 'rgba(5,5,10,0.7)';
+// SCROLL REVEAL
+const io=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*60);io.unobserve(e.target);}});},{threshold:0.07});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// PIPELINE HOVER
+document.querySelectorAll('.p-step').forEach(s=>{
+  const icon=s.querySelector('.p-step-icon');
+  s.addEventListener('mouseenter',()=>{icon.style.boxShadow='0 0 24px rgba(232,184,109,.2)';});
+  s.addEventListener('mouseleave',()=>{icon.style.boxShadow='none';});
 });
 </script>
 </body>
